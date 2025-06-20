@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Membership - Cyber Guardians</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header id="navbar">
+        <div class="container nav-container">
+            <div class="container nav-container">
+                <div class="logo" onclick="window.location.href='/index.html'" style="cursor: pointer;">
+                    <img src="/assets/CG Logo.jpeg" alt="Cyber Guardians Logo" />
+                    Cyber Guardians
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="/index.html">Activities</a></li>
+                        <li><a href="/team.html">Team</a></li>
+                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="/member.html">Membership</a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+    </header>
+
+    <main>
+        <section class="membership-section">
+            <div class="container">
+                <h2>Join Cyber Guardians</h2>
+                <form id="membershipForm" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name<span class="required">*</span></label>
+                        <input type="text" id="name" name="name" required />
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number<span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" required pattern="\\d{10}"
+                            placeholder="10-digit number" />
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email<span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required />
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="college">College Name<span class="required">*</span></label>
+                        <input type="text" id="college" name="college" required />
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="course">Course<span class="required">*</span></label>
+                        <input type="text" id="course" name="course" required />
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="branch">Branch<span class="required">*</span></label>
+                        <input type="text" id="branch" name="branch" required />
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="year">Year of Study<span class="required">*</span></label>
+                        <select id="year" name="year" required>
+                            <option value="" disabled selected>Select your year</option>
+                            <option value="First">First</option>
+                            <option value="Second">Second</option>
+                            <option value="Third">Third</option>
+                            <option value="Fourth">Fourth</option>
+                        </select>
+                        <small class="error-message"></small>
+                    </div>
+                    <div class="form-group">
+                        <label for="reason">Reason to Join the Club<span class="required">*</span></label>
+                        <textarea id="reason" name="reason" rows="4" required
+                            placeholder="Tell us why you want to join Cyber Guardians"></textarea>
+                        <small class="error-message"></small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Apply for Membership</button>
+                </form>
+                <div id="formStatus" role="alert" aria-live="polite"
+                    style="margin-top:1rem; color: var(--color-secondary); font-weight: 600;"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2024 Cyber Guardians. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="member.js"></script>
+</body>
+
+</html>
