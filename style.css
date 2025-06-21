@@ -169,13 +169,13 @@ nav ul li a:focus {
 
 /* Sections */
 section {
-    padding: 6rem 0;
+    padding-top: 60px;
 }
 
 h2 {
     font-family: var(--font-secondary);
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 25px;
     color: var(--color-primary);
     text-align: center;
     text-shadow: 0 0 8px var(--color-primary);
@@ -214,6 +214,26 @@ h2 {
 }
 
 .card p {
+    color: var(--color-text);
+    font-size: 1rem;
+}
+
+.card1 {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    padding: 30px 20px;
+    width: 360px;
+    box-shadow: 0 0 15px var(--color-primary);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    cursor: default;
+}
+
+.card1 h2 {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+.card1 p {
     color: var(--color-text);
     font-size: 1rem;
 }
