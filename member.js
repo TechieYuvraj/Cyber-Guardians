@@ -75,6 +75,13 @@ document.addEventListener('DOMContentLoaded', () => {
             isValid = false;
         }
 
+        // Validate Terms and Conditions
+        const termsInput = membershipForm.terms;
+        if (!termsInput.checked) {
+            showError(termsInput, 'You must agree to the Terms and Conditions');
+            isValid = false;
+        }
+
         if (!isValid) {
             return;
         }
@@ -100,15 +107,15 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             body: JSON.stringify(formData)
         })
-        .then(() => {
-            formStatus.style.color = 'var(--color-secondary)';
-            formStatus.textContent = 'Thank you for applying! We will get back to you soon.';
-            membershipForm.reset();
-        })
-        .catch(() => {
-            formStatus.style.color = 'var(--color-accent-red)';
-            formStatus.textContent = 'Oops! Something went wrong. Please try again later.';
-        });
+            .then(() => {
+                formStatus.style.color = 'var(--color-secondary)';
+                formStatus.textContent = 'Thank you for applying! We will get back to you soon.';
+                membershipForm.reset();
+            })
+            .catch(() => {
+                formStatus.style.color = 'var(--color-accent-red)';
+                formStatus.textContent = 'Oops! Something went wrong. Please try again later.';
+            });
     });
 
     // Helper functions

@@ -365,6 +365,50 @@ footer {
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.7);
 }
 
+.links {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 0.5rem;
+}
+
+.links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color var(--transition-speed);
+}
+
+.links h3 {
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.quick-links,
+.social-links,
+.address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin: 10px 20px
+}
+
+.footer-logo {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.terms-section h2 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 2rem;
+    justify-self: left;
+    color: var(--color-text);
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     nav ul {
