@@ -368,8 +368,6 @@ footer {
 .links {
     display: flex;
     justify-content: space-around;
-    gap: 10px;
-    margin-top: 0.5rem;
 }
 
 .links a {
