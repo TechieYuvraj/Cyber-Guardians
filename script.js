@@ -45,3 +45,32 @@ document.addEventListener('DOMContentLoaded', () => {
         return re.test(email.toLowerCase());
     }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleHeaders = document.querySelectorAll('.toggle-header');
+    toggleHeaders.forEach(header => {
+        const toggleButton = header.querySelector('.toggle-button');
+        const content = header.nextElementSibling;
+
+        // Initialize button text
+        toggleButton.textContent = '[+]';
+
+        header.style.cursor = 'pointer';
+
+        const toggleContent = () => {
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                toggleButton.textContent = '[-]';
+            } else {
+                content.style.display = 'none';
+                toggleButton.textContent = '[+]';
+            }
+        };
+
+        header.addEventListener('click', toggleContent);
+        toggleButton.addEventListener('click', (e) => {
+            e.stopPropagation();
+            toggleContent();
+        });
+    });
+});

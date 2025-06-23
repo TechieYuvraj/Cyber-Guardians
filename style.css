@@ -441,3 +441,34 @@ footer {
         align-items: center;
     }
 }
+
+/* Styles for past event images */
+.past-event .event-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.past-event .event-images img {
+    width: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.7);
+    border: 2px solid #00ffff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.past-event .event-images img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .past-event .event-images img {
+        width: 190px;
+    }
+}
