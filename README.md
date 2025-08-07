@@ -2,7 +2,7 @@
 
 [![Website](https://img.shields.io/badge/Website-Live-blue)](https://cyberguardians.tech)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Active-success)](https://github.com/your-username/cyber-guardians)
+[![Status](https://img.shields.io/badge/Status-Active-success)](https://github.com/techiryuvraj/cyber-guardians)
 
 ## 🛡️ About Cyber Guardians
 
@@ -133,7 +133,7 @@ cyber-guardians/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/cyber-guardians.git
+   git clone https://github.com/techieyuvraj/cyber-guardians
    cd cyber-guardians
    ```
 
@@ -189,8 +189,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Support
 - 📧 Email: contact@cyberguardians.tech
-- 🐛 Issues: [GitHub Issues](https://github.com/your-username/cyber-guardians/issues)
-- 💬 Discussions: [GitHub Discussions](https://github.com/your-username/cyber-guardians/discussions)
+- 🐛 Issues: [GitHub Issues](https://github.com/techieyuvraj/cyber-guardians/issues)
+- 💬 Discussions: [GitHub Discussions](https://github.com/techieyuvraj/cyber-guardians/discussions)
 
 ## 🙏 Acknowledgments
 
