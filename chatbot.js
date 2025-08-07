@@ -96,10 +96,10 @@ function initChatbot() {
         chatbotInput.value = '';
         
         try {
-            // Call the backend proxy endpoint to avoid CORS issues
-            const proxyUrl = '/api/send-to-n8n';
+            // Replace the URL below with your actual webhook URL
+            const webhookUrl = 'https://tech-soul-boy.app.n8n.cloud/webhook-test/239ac5b1-9e1a-452d-a73b-90f0aec51ccb';
 
-            const response = await fetch(proxyUrl, {
+            const response = await fetch(webhookUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
