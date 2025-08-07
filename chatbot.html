@@ -1,0 +1,40 @@
+<!-- Chatbot Widget -->
+<div id="chatbot-widget">
+    <!-- Chat Icon -->
+    <button id="chatbot-icon" class="chatbot-icon" aria-label="Open chat">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2Z" fill="currentColor"/>
+            <path d="M6 9H18V11H6V9ZM14 15H6V13H14V15ZM18 7H6V5H18V7Z" fill="black"/>
+        </svg>
+    </button>
+
+    <!-- Chat Popup -->
+    <div id="chatbot-popup" class="chatbot-popup">
+        <div class="chatbot-header">
+            <h3>Cyber Assistant</h3>
+            <button id="chatbot-close" class="chatbot-close" aria-label="Close chat">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
+        
+        <div id="chatbot-messages" class="chatbot-messages">
+            <div class="message bot-message">
+                <div class="message-content">
+                    <p>Hello! I'm your Cyber Assistant. How can I help you today?</p>
+                </div>
+                <span class="message-time">Just now</span>
+            </div>
+        </div>
+        
+        <div class="chatbot-input-container">
+            <input type="text" id="chatbot-input" placeholder="Type your message..." maxlength="500">
+            <button id="chatbot-send" class="chatbot-send" aria-label="Send message">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="currentColor"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>

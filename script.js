@@ -74,3 +74,18 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+// Webhook simulation for testing
+async function simulateWebhook(message) {
+    // Simulate AI response
+    const responses = [
+        "That's a great question! Let me help you with that.",
+        "I understand your concern. Here's what I recommend...",
+        "Thanks for reaching out! I'll get back to you shortly.",
+        "Interesting point! Let me provide some insights...",
+        "I'm here to help! What specific information do you need?"
+    ];
+    
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    return responses[Math.floor(Math.random() * responses.length)];
+}
